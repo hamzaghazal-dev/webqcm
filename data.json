@@ -1,274 +1,788 @@
 {
-    "questionnaire": [
-      {
-        "question": "Parmi les dispositifs suivants, lesquels sont utilisés pour établir une connexion WAN ?",
-        "options": [
-          {"option": "A) Switch Ethernet", "correct": false},
-          {"option": "B) Modem DSL", "correct": true},
-          {"option": "C) Routeur", "correct": true},
-          {"option": "D) Point d'accès Wi-Fi", "correct": false}
-        ]
-      },
-      {
-        "question": "Quel standard est utilisé dans la couche physique pour les connexions WAN ?",
-        "options": [
-          {"option": "A) Ethernet", "correct": false},
-          {"option": "B) V.35", "correct": true},
-          {"option": "C) HDLC", "correct": false},
-          {"option": "D) PPP", "correct": false}
-        ]
-      },
-      {
-        "question": "Lequel de ces protocoles n’appartient pas à la couche liaison dans un réseau WAN ?",
-        "options": [
-          {"option": "A) Frame Relay", "correct": false},
-          {"option": "B) MPLS", "correct": false},
-          {"option": "C) HDLC", "correct": false},
-          {"option": "D) IP", "correct": true}
-        ]
-      },
-      {
-        "question": "Quelle affirmation décrit correctement une route statique ?",
-        "options": [
-          {"option": "A) Elle est ajoutée dynamiquement dans la table de routage.", "correct": false},
-          {"option": "B) Elle est configurée manuellement par un administrateur réseau.", "correct": true},
-          {"option": "C) Elle utilise toujours la métrique par défaut du protocole RIP.", "correct": false},
-          {"option": "D) Elle ne peut jamais être utilisée comme route de secours.", "correct": false}
-        ]
-      },
-      {
-        "question": "Lorsque plusieurs routes sont disponibles vers la même destination, quelle est la priorité d’utilisation ?",
-        "options": [
-          {"option": "A) La route avec la plus faible métrique", "correct": true},
-          {"option": "B) La route avec la plus haute distance administrative", "correct": false},
-          {"option": "C) La route la plus récemment configurée", "correct": false},
-          {"option": "D) La route avec le protocole OSPF", "correct": false}
-        ]
-      },
-      {
-        "question": "Quelle est la meilleure description du Split Horizon ?",
-        "options": [
-          {"option": "A) Une route reçue par une interface ne peut pas être annoncée sur cette même interface.", "correct": true},
-          {"option": "B) Une route avec un coût plus élevé est immédiatement retirée de la table de routage.", "correct": false},
-          {"option": "C) Les routes statiques ont priorité sur les routes dynamiques.", "correct": false},
-          {"option": "D) Les mises à jour de routage RIP sont filtrées pour éviter les boucles.", "correct": false}
-        ]
-      },
-      {
-        "question": "Le Route Poisoning est utilisé pour :",
-        "options": [
-          {"option": "A) Supprimer une route non valide en attribuant une métrique infinie.", "correct": true},
-          {"option": "B) Empêcher la propagation des routes statiques vers les voisins.", "correct": false},
-          {"option": "C) Configurer les routes par défaut dans les tables de routage.", "correct": false},
-          {"option": "D) Éviter la convergence des protocoles.", "correct": false}
-        ]
-      },
-      {
-        "question": "Quelle limitation est associée à RIP v1 ?",
-        "options": [
-          {"option": "A) L'absence de support pour VLSM.", "correct": true},
-          {"option": "B) Une distance administrative élevée.", "correct": false},
-          {"option": "C) Une métrique maximale de 30 sauts.", "correct": false},
-          {"option": "D) Une convergence plus rapide que RIP v2.", "correct": false}
-        ]
-      },
-      {
-        "question": "Par défaut, RIP envoie des mises à jour de routage toutes les :",
-        "options": [
-          {"option": "A) 15 secondes", "correct": false},
-          {"option": "B) 30 secondes", "correct": true},
-          {"option": "C) 60 secondes", "correct": false},
-          {"option": "D) 180 secondes", "correct": false}
-        ]
-      },
-      {
-        "question": "Dans OSPF, quelle est la fonction principale d’un LSA (Link State Advertisement) ?",
-        "options": [
-          {"option": "A) Identifier les routeurs DR et BDR dans un réseau.", "correct": false},
-          {"option": "B) Partager l’état des liens pour calculer les routes optimales.", "correct": true},
-          {"option": "C) Réduire les mises à jour de routage inutiles.", "correct": false},
-          {"option": "D) Établir une connexion physique entre deux routeurs.", "correct": false}
-        ]
-      },
-      {
-        "question": "Dans OSPF, qu'est-ce qu'un DR (Designated Router) ?",
-        "options": [
-          {"option": "A) Le routeur avec le coût le plus élevé dans le réseau.", "correct": false},
-          {"option": "B) Le routeur centralisant les mises à jour OSPF dans un réseau multi-accès.", "correct": true},
-          {"option": "C) Le routeur ayant la métrique la plus basse dans un domaine OSPF.", "correct": false},
-          {"option": "D) Le premier routeur configuré dans le réseau.", "correct": false}
-        ]
-      },
-      {
-        "question": "Quel est l'intervalle par défaut des paquets Hello dans OSPF et vers quelle adresse sont-ils envoyés ?",
-        "options": [
-          {"option": "A) 5 secondes via 224.0.0.6", "correct": false},
-          {"option": "B) 10 secondes via 224.0.0.6", "correct": false},
-          {"option": "C) 20 secondes via 224.0.0.5", "correct": false},
-          {"option": "D) 10 secondes via 224.0.0.5", "correct": true}
-        ]
-      },
-      {
-        "question": "Quels paramètres EIGRP utilise-t-il pour calculer la métrique par défaut ?",
-        "options": [
-          {"option": "A) Bande passante et délai", "correct": true},
-          {"option": "B) Distance et fiabilité", "correct": false},
-          {"option": "C) Charge et MTU", "correct": false},
-          {"option": "D) Latence et coûts", "correct": false}
-        ]
-      },
-      {
-        "question": "Quelle est la distance administrative par défaut des routes externes EIGRP ?",
-        "options": [
-          {"option": "A) 90", "correct": false},
-          {"option": "B) 100", "correct": false},
-          {"option": "C) 110", "correct": false},
-          {"option": "D) 170", "correct": true}
-        ]
-      },
-      {
-        "question": "Quelle affirmation est correcte à propos de l'algorithme DUAL d’EIGRP ?",
-        "options": [
-          {"option": "A) Il utilise le coût cumulé comme seule métrique.", "correct": false},
-          {"option": "B) Il garantit une convergence rapide en évitant les boucles.", "correct": true},
-          {"option": "C) Il ne prend en charge que les réseaux IPv4.", "correct": false},
-          {"option": "D) Il remplace automatiquement les routes statiques.", "correct": false}
-        ]
-      },
-      {
-        "question": "Avec un masque de /19, combien d'adresses IP sont disponibles pour les hôtes ?",
-        "options": [
-          {"option": "A) 8190", "correct": false},
-          {"option": "B) 4096", "correct": false},
-          {"option": "C) 8192", "correct": true},
-          {"option": "D) 2048", "correct": false}
-        ]
-      },
-      {
-        "question": "Quelle est l'adresse réseau de 192.168.50.62/27 ?",
-        "options": [
-          {"option": "A) 192.168.50.0", "correct": false},
-          {"option": "B) 192.168.50.32", "correct": true},
-          {"option": "C) 192.168.50.64", "correct": false},
-          {"option": "D) 192.168.50.48", "correct": false}
-        ]
-      },
-      {
-        "question": "Quelle métrique utilise OSPF pour calculer le meilleur chemin ?",
-        "options": [
-          {"option": "A) Coût basé sur la bande passante", "correct": true},
-          {"option": "B) Nombre de sauts", "correct": false},
-          {"option": "C) Temps de latence", "correct": false},
-          {"option": "D) Charge", "correct": false}
-        ]
-      },
-      {
-        "question": "Dans quel cas une distance administrative est-elle utilisée ?",
-        "options": [
-          {"option": "A) Pour choisir entre plusieurs protocoles de routage vers une même destination.", "correct": true},
-          {"option": "B) Pour calculer les délais de convergence.", "correct": false},
-          {"option": "C) Pour synchroniser les mises à jour entre routeurs voisins.", "correct": false},
-          {"option": "D) Pour déterminer les coûts cumulés d’une route.", "correct": false}
-        ]
-      },
-      {
-        "question": "Quel est le rôle principal d’un protocole de routage dynamique ?",
-        "options": [
-          {"option": "A) Configurer manuellement les routes dans un réseau.", "correct": false},
-          {"option": "B) Maintenir automatiquement les tables de routage.", "correct": true},
-          {"option": "C) Gérer les adresses IP privées.", "correct": false},
-          {"option": "D) Propager les VLAN dans un réseau.", "correct": false}
-        ]
-      },
-      {
-        "question": "Quelle est la principale fonction de CDP ?",
-        "options": [
-          {"option": "A) Partager des informations de routage avec des périphériques voisins.", "correct": false},
-          {"option": "B) Découvrir et identifier les périphériques Cisco connectés directement.", "correct": true},
-          {"option": "C) Synchroniser les configurations VLAN entre les périphériques.", "correct": false},
-          {"option": "D) Propager les mises à jour de routage dans le réseau.", "correct": false}
-        ]
-      },
-      {
-        "question": "Par défaut, à quel intervalle les messages CDP sont-ils envoyés ?",
-        "options": [
-          {"option": "A) Toutes les 10 secondes", "correct": false},
-          {"option": "B) Toutes les 30 secondes", "correct": true},
-          {"option": "C) Toutes les 60 secondes", "correct": false},
-          {"option": "D) Toutes les 90 secondes", "correct": false}
-        ]
-      },
-      {
-        "question": "Quelle est la différence majeure entre LLDP et CDP ?",
-        "options": [
-          {"option": "A) LLDP est un protocole ouvert, tandis que CDP est propriétaire.", "correct": true},
-          {"option": "B) LLDP est uniquement utilisé pour IPv6.", "correct": false},
-          {"option": "C) LLDP envoie des mises à jour plus fréquentes que CDP.", "correct": false},
-          {"option": "D) CDP est activé par défaut sur tous les périphériques, contrairement à LLDP.", "correct": false}
-        ]
-      },
-      {
-        "question": "Dans quel scénario LLDP est-il préférable à CDP ?",
-        "options": [
-          {"option": "A) Lors de la configuration de périphériques Cisco uniquement.", "correct": false},
-          {"option": "B) Lors de l'interconnexion de périphériques multi-fournisseurs.", "correct": true},
-          {"option": "C) Lors de l’utilisation de VLANs spécifiques.", "correct": false},
-          {"option": "D) Lors de la mise en œuvre de routage dynamique.", "correct": false}
-        ]
-      },
-      {
-        "question": "Par défaut, quelle est la durée de vie d’une information LLDP dans un périphérique voisin ?",
-        "options": [
-          {"option": "A) 30 secondes", "correct": false},
-          {"option": "B) 60 secondes", "correct": false},
-          {"option": "C) 120 secondes", "correct": true},
-          {"option": "D) 180 secondes", "correct": false}
-        ]
-      },
-      {
-        "question": "Lequel des composants suivants stocke les fichiers de configuration de démarrage ?",
-        "options": [
-          {"option": "A) NVRAM", "correct": true},
-          {"option": "B) RAM", "correct": false},
-          {"option": "C) Flash", "correct": false},
-          {"option": "D) ROM", "correct": false}
-        ]
-      },
-      {
-        "question": "Quelle mémoire est utilisée pour charger et exécuter l’IOS (Internetwork Operating System) sur un routeur Cisco ?",
-        "options": [
-          {"option": "A) ROM", "correct": false},
-          {"option": "B) RAM", "correct": true},
-          {"option": "C) NVRAM", "correct": false},
-          {"option": "D) Flash", "correct": false}
-        ]
-      },
-      {
-        "question": "Quel composant d’un routeur Cisco est utilisé pour stocker le fichier de configuration courant ?",
-        "options": [
-          {"option": "A) RAM", "correct": true},
-          {"option": "B) NVRAM", "correct": false},
-          {"option": "C) Flash", "correct": false},
-          {"option": "D) ROM", "correct": false}
-        ]
-      },
-      {
-        "question": "Quel est le rôle principal de la ROM dans un routeur Cisco ?",
-        "options": [
-          {"option": "A) Stocker le fichier de configuration de démarrage.", "correct": false},
-          {"option": "B) Charger le système d’exploitation IOS au démarrage.", "correct": false},
-          {"option": "C) Fournir des diagnostics matériels et logiciels.", "correct": true},
-          {"option": "D) Sauvegarder les informations de routage.", "correct": false}
-        ]
-      },
-      {
-        "question": "Lorsqu’un routeur démarre, dans quel ordre les composants sont-ils utilisés ?",
-        "options": [
-          {"option": "A) RAM → NVRAM → Flash → ROM", "correct": false},
-          {"option": "B) ROM → Flash → NVRAM → RAM", "correct": true},
-          {"option": "C) Flash → RAM → NVRAM → ROM", "correct": false},
-          {"option": "D) NVRAM → ROM → Flash → RAM", "correct": false}
-        ]
-      }
-    ]
-  }
+  "questionnaire": [
+    {
+      "question": "Comment enregistrer l’état actuel de votre code dans git?",
+      "options": [
+        {"option": "a. En ajoutant toutes les modifications et en les organisant avec git add", "correct": false},
+        {"option": "b. En créant un nouveau commit avec git init", "correct": false},
+        {"option": "c. En ajoutant toutes les modifications et en les mettant en scène avec git stage", "correct": false},
+        {"option": "d. En validant les modifications mises en scène avec git commit", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle commande pour vérifier l’historique de votre référentiel?",
+      "options": [
+        {"option": "a. git log", "correct": true},
+        {"option": "b. git checkout", "correct": false},
+        {"option": "c. git diff", "correct": false},
+        {"option": "d. git fetch", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle commande pour retourner à la branche principale?",
+      "options": [
+        {"option": "a. git checkout branche", "correct": false},
+        {"option": "b. git checkout master", "correct": true},
+        {"option": "c. git checkout origin", "correct": false},
+        {"option": "d. git checkout -b master", "correct": false}
+      ]
+    },
+    {
+      "question": "En JavaScript, un appel asynchrone est communément appelé?",
+      "options": [
+        {"option": "a. Signal", "correct": false},
+        {"option": "b. WebSocket", "correct": false},
+        {"option": "c. Ajax", "correct": true},
+        {"option": "d. POST", "correct": false}
+      ]
+    },
+    {
+      "question": "Que faut-il écrire pour créer une date en JS?",
+      "options": [
+        {"option": "a. var date = Date.new()", "correct": false},
+        {"option": "b. var date = new Date", "correct": true},
+        {"option": "c. var date = Date()", "correct": false},
+        {"option": "d. Date date = new Date()", "correct": false}
+      ]
+    },
+    {
+      "question": "Le DOM _?",
+      "options": [
+        {"option": "a. est un moteur de Template", "correct": false},
+        {"option": "b. ne peut pas être manipulé par JavaScript", "correct": false},
+        {"option": "c. est dédié pour JavaScript", "correct": false},
+        {"option": "d. décrit la structure du document HTML ou XML", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle(s) égalité(s) parmi les suivantes sont vraie(s)?",
+      "options": [
+        {"option": "a. ==", "correct": true},
+        {"option": "b. 0 == \"\"", "correct": true},
+        {"option": "c. 0 == \"\"", "correct": true},
+        {"option": "d. \"f\" + 1 = \"f1\"", "correct": false}
+      ]
+    },
+    {
+      "question": "Quels sont les avantages d’utiliser JavaScript pour la validation de formulaire?",
+      "options": [
+        {"option": "a. Toutes les réponses sont vraies", "correct": true},
+        {"option": "b. Validité accrue de la soumission du formulaire", "correct": true},
+        {"option": "c. Augmenter la satisfaction de l’utilisateur final", "correct": true},
+        {"option": "d. Conservation de la bande passante", "correct": true}
+      ]
+    },
+    {
+      "question": "Comment peut-on modifier le contenu de l'élément HTML suivant: <p id=\"txt\">Voici un texte.</p>?",
+      "options": [
+        {"option": "a. document.getElementById(\"p\").innerHTML = \"Voici un autre!\";", "correct": false},
+        {"option": "b. #p.innerHTML = \"Voici un autre!\";", "correct": false},
+        {"option": "c. document.getElementById(\"txt\").innerHTML = \"Voici un autre!\";", "correct": true},
+        {"option": "d. document.getElementByIdName(\"p\").innerHTML = \"Voici un autre!\";", "correct": false}
+      ]
+    },
+    {
+      "question": "Quel est le format courant d’échange d’objets JavaScript?",
+      "options": [
+        {"option": "a. SOAP", "correct": false},
+        {"option": "b. MIME", "correct": false},
+        {"option": "c. XML", "correct": false},
+        {"option": "d. JSON", "correct": true}
+      ]
+    },
+    {
+      "question": "Qu'utilisez-vous pour écrire un message dans la console du navigateur?",
+      "options": [
+        {"option": "a. console.log(\"msg\")", "correct": true},
+        {"option": "b. alert(\"msg\")", "correct": false},
+        {"option": "c. system.out.println(\"msg\")", "correct": false},
+        {"option": "d. print(\"msg\")", "correct": false}
+      ]
+    },
+    {
+      "question": "Que vaut une variable qui n'a jamais été assignée?",
+      "options": [
+        {"option": "a. Error", "correct": false},
+        {"option": "b. Null", "correct": false},
+        {"option": "c. Undefined", "correct": true},
+        {"option": "d. NaN", "correct": false}
+      ]
+    },
+    {
+      "question": "Quel est l'équivalent de Etudiant.nom?",
+      "options": [
+        {"option": "a. Aucune des solutions précédentes", "correct": false},
+        {"option": "b. Etudiant[nom]", "correct": true},
+        {"option": "c. Etudiant[nom]", "correct": true},
+        {"option": "d. Etudiant.getNom()", "correct": false}
+      ]
+    },
+    {
+      "question": "En JavaScript, quels sont les trois états d'une promesse?",
+      "options": [
+        {"option": "a. Fulfilled", "correct": true},
+        {"option": "b. Rejected", "correct": true},
+        {"option": "c. Aborted", "correct": false},
+        {"option": "d. Pending", "correct": true}
+      ]
+    },
+    {
+      "question": "Qu'affiche le script suivant?",
+      "options": [
+        {"option": "a. baz", "correct": false},
+        {"option": "b. Une erreur", "correct": true},
+        {"option": "c. bar", "correct": false},
+        {"option": "d. foo", "correct": false}
+      ]
+    },
+    {
+      "question": "Si on GET /message, on obtient un JSON contenant tous les messages?",
+      "options": [
+        {"option": "a. Si on GET /message, on obtient un JSON contenant tous les messages", "correct": true},
+        {"option": "b. Si on GET /message/add, le serveur servira la page messagesViews/index.html", "correct": false},
+        {"option": "c. La route app.post(\"/message/add\", ...) ne pourra jamais être atteinte du fait que le middleware express.static() soit instancié sur la même route juste avant", "correct": false},
+        {"option": "d. Lors d'un POST /message/add, les paramètres envoyés sont placés dans un nouvel objet, qui vient s'ajouter au tableau global messages", "correct": false}
+      ]
+    },
+    {
+      "question": "Si on appelle la ressource \"tutorial.mp4\", quel sera le fichier statique renvoyé?",
+      "options": [
+        {"option": "a. Celui se trouvant dans /medias/", "correct": false},
+        {"option": "b. Celui se trouvant dans /uploads/", "correct": false},
+        {"option": "c. Celui se trouvant dans /static/", "correct": false},
+        {"option": "d. Le serveur tournera dans le vide sans répondre", "correct": false},
+        {"option": "e. On aura une erreur 404", "correct": true}
+      ]
+    },
+    {
+      "question": "Comment inclure le module MathModule.js suivant dans le fichier principal?",
+      "options": [
+        {"option": "a. const MathModule = import(\"/MathModule.js\")", "correct": false},
+        {"option": "b. const MathModule = require_once(\"/MathModule.js\")", "correct": false},
+        {"option": "c. const MathModule = require(\"/MathModule.js\")", "correct": true},
+        {"option": "d. const MathModule = include(\"/MathModule.js\")", "correct": false}
+      ]
+    },
+    {
+      "question": "NodeJS est un portage du langage JavaScript sur une runtime, et pouvant s'exécuter côté serveur. Quelles affirmations sont justes à son sujet?",
+      "options": [
+        {"option": "a. Il utilise le même moteur que Mozilla Firefox: JagerMonkey", "correct": false},
+        {"option": "b. Il est très rapide car il a un modèle événementiel non-bloquant", "correct": true},
+        {"option": "c. Il utilise le même moteur que Chrome: V8", "correct": true},
+        {"option": "d. Il est très rapide car il permet de lancer un très grand nombre de threads", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment ajouter le module async à notre projet?",
+      "options": [
+        {"option": "a. npm add async", "correct": false},
+        {"option": "b. npm save async", "correct": false},
+        {"option": "c. npm install --save async", "correct": true},
+        {"option": "d. npm use async", "correct": false}
+      ]
+    },
+    {
+      "question": "Qu'affichera exactement le navigateur si on interroge http://localhost:1337/foobar?",
+      "options": [
+        {"option": "a. Welcome home", "correct": false},
+        {"option": "b. Le serveur ne renvoie rien du tout!", "correct": false},
+        {"option": "c. My projects", "correct": false},
+        {"option": "d. Le serveur Node crashe, et le navigateur indique que le site est inaccessible.", "correct": false},
+        {"option": "e. Not found!", "correct": true}
+      ]
+    },
+    {
+      "question": "Qu'est-ce que Node.js?",
+      "options": [
+        {"option": "a. Un langage semblable au JavaScript mais avec plus de fonctionnalités", "correct": false},
+        {"option": "b. Un interpréteur JavaScript basé sur V8 et pouvant être utilisé côté serveur", "correct": true},
+        {"option": "c. Un framework permettant de créer des serveurs web en JavaScript", "correct": false},
+        {"option": "d. Un serveur Apache utilisant du JavaScript au lieu du PHP", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment gérer les routes dynamiques dans Express?",
+      "options": [
+        {"option": "a. app.get('param', req, res) => (...)", "correct": false},
+        {"option": "b. app.route('/param', ...)", "correct": false},
+        {"option": "c. app.get('/param', req, res) => (...)", "correct": true},
+        {"option": "d. app.any(':param ', ...)", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment rediriger une requête vers une autre URL?",
+      "options": [
+        {"option": "a. res.redirect('URL')", "correct": true},
+        {"option": "b. res.forward('URL')", "correct": false},
+        {"option": "c. res.route('URL')", "correct": false}
+      ]
+    },
+    {
+      "question": "Que fait la méthode app.use()?",
+      "options": [
+        {"option": "a. Définit des middlewares ou monte des sous-applications", "correct": true},
+        {"option": "b. Gère uniquement les erreurs", "correct": false},
+        {"option": "c. Crée une nouvelle instance d'Express", "correct": false},
+        {"option": "d. Configure les paramètres du serveur", "correct": false}
+      ]
+    },
+    {
+      "question": "Que fait res.send()?",
+      "options": [
+        {"option": "a. Télécharge un fichier", "correct": false},
+        {"option": "b. Initialise une nouvelle requête", "correct": false},
+        {"option": "c. Envoie une réponse JSON uniquement", "correct": false},
+        {"option": "d. Termine la réponse et envoie des données au client", "correct": true}
+      ]
+    },
+    {
+      "question": "Quel middleware est utilisé pour analyser les données en JSON dans une requête?",
+      "options": [
+        {"option": "a. express.body()", "correct": false},
+        {"option": "b. urlencoded-parser", "correct": false},
+        {"option": "c. express.json()", "correct": true},
+        {"option": "d. body-parser", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle bibliothèque est souvent utilisée avec Express pour gérer les sessions?",
+      "options": [
+        {"option": "a. express-session", "correct": true},
+        {"option": "b. session-handler", "correct": false},
+        {"option": "c. cookie-parser", "correct": false},
+        {"option": "d. body-parser", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle méthode envoie une réponse JSON au client?",
+      "options": [
+        {"option": "a. res.text()", "correct": false},
+        {"option": "b. res.sendJSON", "correct": false},
+        {"option": "c. res.json()", "correct": true},
+        {"option": "d. res.html", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle méthode est utilisée pour gérer les erreurs dans Express?",
+      "options": [
+        {"option": "a. app.catch(err)", "correct": false},
+        {"option": "b. app.use((err, req, res, next) => { … })", "correct": true},
+        {"option": "c. app.catchError()", "correct": false},
+        {"option": "d. app.errorHandler()", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle méthode permet de définir un middleware pour des routes spécifiques?",
+      "options": [
+        {"option": "a. app.middleware()", "correct": false},
+        {"option": "b. app.use('/route', middleware)", "correct": true},
+        {"option": "c. app.set('/route', middleware)", "correct": false},
+        {"option": "d. app.route()", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment capturer une erreur dans une fonction utilisant async/await?",
+      "options": [
+        {"option": "a. En retournant une nouvelle promesse avec l'erreur.", "correct": false},
+        {"option": "b. Les erreurs ne peuvent pas être capturées", "correct": false},
+        {"option": "c. En enveloppant le code avec un try...catch", "correct": true}
+      ]
+    },
+    {
+      "question": "Que retourne une promesse résolue?",
+      "options": [
+        {"option": "a. La valeur passée à resolve().", "correct": true},
+        {"option": "b. Une erreur", "correct": false},
+        {"option": "c. Rien du tout.", "correct": false},
+        {"option": "d. Une valeur encapsulée dans un objet \"Promise\".", "correct": false}
+      ]
+    },
+    {
+      "question": "Quel est l'intérêt principal d'utiliser async/await par rapport aux promesses classiques?",
+      "options": [
+        {"option": "a. Rendre le code entièrement synchrone.", "correct": false},
+        {"option": "b. Remplacer les promesses par des fonctions synchrones.", "correct": false},
+        {"option": "c. Faciliter la lisibilité et la gestion des erreurs dans le code asynchrone.", "correct": true},
+        {"option": "d. Cela ne change rien par rapport aux promesses.", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle est la syntaxe correcte pour une fonction fléchée qui retourne un carré d'un nombre?",
+      "options": [
+        {"option": "a. => { return n * n; }", "correct": false},
+        {"option": "b. n => return n * n;", "correct": false},
+        {"option": "c. n -> { return n * n; }", "correct": false},
+        {"option": "d. > n * n;", "correct": false}
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si vous utilisez await en dehors d'une fonction déclarée avec async?",
+      "options": [
+        {"option": "a. Une erreur est levée.", "correct": true},
+        {"option": "b. La promesse est rejetée.", "correct": false},
+        {"option": "c. Le code continue mais ignore await.", "correct": false},
+        {"option": "d. L'attente se produit normalement.", "correct": false}
+      ]
+    },
+    {
+      "question": "Dans Mongoose, comment définir un champ obligatoire dans un Schema?",
+      "options": [
+        {"option": "a. required: true", "correct": true},
+        {"option": "b. must: true", "correct": false},
+        {"option": "c. unique: true", "correct": false},
+        {"option": "d. mandatory", "correct": false}
+      ]
+    },
+    {
+      "question": "Dans Mongoose, que fait un \"Schema\"?",
+      "options": [
+        {"option": "a. Définit la structure d'un document MongoDB", "correct": true},
+        {"option": "b. Met à jour une base de données", "correct": false},
+        {"option": "c. Déclare un index unique", "correct": false},
+        {"option": "d. Crée une nouvelle collection", "correct": false}
+      ]
+    },
+    {
+      "question": "MongoDB est une base de données de type:",
+      "options": [
+        {"option": "a. Relationnelle", "correct": false},
+        {"option": "b. Clé/valeur", "correct": false},
+        {"option": "c. Orientée documents", "correct": true},
+        {"option": "d. Graphique", "correct": false}
+      ]
+    },
+    {
+      "question": "Que retourne Model.findOne()?",
+      "options": [
+        {"option": "a. Le premier document correspondant à la requête", "correct": true},
+        {"option": "b. Le dernier document ajouté", "correct": false},
+        {"option": "c. Un tableau de documents", "correct": false},
+        {"option": "d. Tous les documents correspondant à la requête", "correct": false}
+      ]
+    },
+    {
+      "question": "Quel format de données MongoDB utilise-t-il pour stocker les documents?",
+      "options": [
+        {"option": "a. JSON", "correct": false},
+        {"option": "b. CSV", "correct": false},
+        {"option": "c. BSON", "correct": true},
+        {"option": "d. XML", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle commande insère un document dans une collection?",
+      "options": [
+        {"option": "a. db.collection.insert()", "correct": false},
+        {"option": "b. db.collection.add", "correct": false},
+        {"option": "c. db.insertDocument", "correct": false},
+        {"option": "d. db.collection.insertOne", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle méthode permet de créer un modèle basé sur un schéma dans Mongoose?",
+      "options": [
+        {"option": "a. mongoose.makeModel()", "correct": false},
+        {"option": "b. mongoose.createSchema", "correct": false},
+        {"option": "c. mongoose.model()", "correct": true},
+        {"option": "d. mongoose.Schema", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle méthode permet de supprimer un document dans Mongoose?",
+      "options": [
+        {"option": "a. Model.deleteOne()", "correct": true},
+        {"option": "b. Model.drop()", "correct": false},
+        {"option": "c. Model.delete()", "correct": false},
+        {"option": "d. Model.remove()", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle méthode permet de trouver des documents avec Mongoose?",
+      "options": [
+        {"option": "a. Model.query()", "correct": false},
+        {"option": "b. Model.find()", "correct": true},
+        {"option": "c. Model.search()", "correct": false},
+        {"option": "d. Model.get()", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle méthode est utilisée pour arrêter un serveur Node.js?",
+      "options": [
+        {"option": "a. stop()", "correct": false},
+        {"option": "b. close()", "correct": true},
+        {"option": "c. exit", "correct": false},
+        {"option": "d. end", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment définir une route par défaut dans Express?",
+      "options": [
+        {"option": "a. app.get('/')", "correct": true},
+        {"option": "b. app.any('/')", "correct": false},
+        {"option": "c. app.default('/')", "correct": false},
+        {"option": "d. app.use('/')", "correct": false}
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'Express.js?",
+      "options": [
+        {"option": "a. Une base de données", "correct": false},
+        {"option": "b. Un framework pour le frontend", "correct": false},
+        {"option": "c. Un outil de déploiement", "correct": false},
+        {"option": "d. Un framework web minimaliste pour Node.js", "correct": true}
+      ]
+    },
+    {
+      "question": "Qu'est-ce que Node.js?",
+      "options": [
+        {"option": "a. Une base de données", "correct": false},
+        {"option": "b. Un framework frontend", "correct": false},
+        {"option": "c. Une bibliothèque JavaScript", "correct": false},
+        {"option": "d. Une base de données", "correct": false},
+        {"option": "e. Un runtime JavaScript côté serveur", "correct": true}
+      ]
+    },
+    {
+      "question": "Que fait la fonction require() en Node.js?",
+      "options": [
+        {"option": "a. Initialise un projet", "correct": false},
+        {"option": "b. Exécute un script externe", "correct": false},
+        {"option": "c. Déclare une variable", "correct": false},
+        {"option": "d. Charge des modules ou fichiers", "correct": true}
+      ]
+    },
+    {
+      "question": "Que fait process.exit(0)?",
+      "options": [
+        {"option": "a. Arrête le processus avec un statut de succes", "correct": true},
+        {"option": "b. Arrête le processus avec un statut d'echec", "correct": false},
+        {"option": "c. Redémarre le processus", "correct": false},
+        {"option": "d. Lance un nouveau processus", "correct": false}
+      ]
+    },
+    {
+      "question": "Que signifie neq dans un gestionnaire de route Express ?",
+      "options": [
+        {"option": "a. La reponse du serveur", "correct": false},
+        {"option": "b. Une fonction de rappel", "correct": false},
+        {"option": "c. Le fichier de configuration", "correct": false},
+        {"option": "d. L'objet representant la requete entrante", "correct": true}
+      ]
+    },
+    {
+      "question": "Quel module est utilisé pour gérer les fichiers dans Node.js ?",
+      "options": [
+        {"option": "a. url", "correct": false},
+        {"option": "b. http", "correct": false},
+        {"option": "c. file", "correct": false},
+        {"option": "d. path", "correct": false},
+        {"option": "e. fs", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle commande execute un fichier JavaScript avec Node.js ?",
+      "options": [
+        {"option": "a. start [nom du fichier]", "correct": false},
+        {"option": "b. npm run [nom du fichier]", "correct": false},
+        {"option": "c. node [nom du fichier]", "correct": true},
+        {"option": "d. run [nom du fichier]", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle commande installe Express.js dans un projet ?",
+      "options": [
+        {"option": "a. express init", "correct": false},
+        {"option": "b. npm add express.js", "correct": false},
+        {"option": "c. node install express", "correct": false},
+        {"option": "d. npm install express", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle méthode est utilisée pour créer une instance d’application Express ?",
+      "options": [
+        {"option": "a. express.createApp()", "correct": false},
+        {"option": "b. app()", "correct": false},
+        {"option": "c. new express()", "correct": false},
+        {"option": "d. express()", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle methode est utilisée pour écouter les requêtes sur un port spécifique ?",
+      "options": [
+        {"option": "a. app.start()", "correct": false},
+        {"option": "b. app.connect()", "correct": false},
+        {"option": "c. app.serve()", "correct": false},
+        {"option": "d. app.listen()", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle variable globale fournit l'accès au répertoire courant du script ?",
+      "options": [
+        {"option": "a. dir", "correct": false},
+        {"option": "b. dimame", "correct": false},
+        {"option": "c. filedir", "correct": false},
+        {"option": "d. process.cwd", "correct": true}
+      ]
+    },
+    {
+      "question": "Comment ecrire une condition IF en JavaScript?",
+      "options": [
+        {"option": "a. if a==2else", "correct": false},
+        {"option": "b. if a=2then", "correct": false},
+        {"option": "c. ifa==2", "correct": false},
+        {"option": "d. ifa=2", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment écrire une condition IF pour vérifier si « a » n’est PAS égal à 2?",
+      "options": [
+        {"option": "a. if a =! 2 then", "correct": false},
+        {"option": "b. if (a <> 2)", "correct": false},
+        {"option": "c. if (a != 2)", "correct": true},
+        {"option": "d. if a <> 2", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle est la syntaxe correcte pour vérifier la valeur de « c » ?",
+      "options": [
+        {"option": "a. if (c = \"XYZ\") then { } else {", "correct": false},
+        {"option": "b. if (c = \"XYZ\") { } else {", "correct": false},
+        {"option": "c. if (c == \"XYZ\") then { } else {", "correct": false},
+        {"option": "d. if (c == \"XYZ\") { } else {", "correct": true}
+      ]
+    },
+    {
+      "question": "Lequel des éléments suivants n’est pas un événement de souris?",
+      "options": [
+        {"option": "a. onmousemove", "correct": false},
+        {"option": "b. onmouseover", "correct": false},
+        {"option": "c. ondick", "correct": true},
+        {"option": "d. onmousescroller", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment creer une fonction en JavaScript?",
+      "options": [
+        {"option": "a. function f0", "correct": false},
+        {"option": "b. function=f0", "correct": false},
+        {"option": "c. function:f0", "correct": false},
+        {"option": "d. Aucune de ces reponses n'est vraie", "correct": true}
+      ]
+    },
+    {
+      "question": "Vous travaillez sur un projet JavaScript. Comment demander des entrées à l’utilisateur?",
+      "options": [
+        {"option": "a. Display()", "correct": false},
+        {"option": "b. Confirm()", "correct": false},
+        {"option": "c. Prompt()", "correct": true},
+        {"option": "d. Alert()", "correct": false}
+      ]
+    },
+    {
+      "question": "Quel evenement est specifique au clavier?",
+      "options": [
+        {"option": "a. onkeypress", "correct": true},
+        {"option": "b. onclick", "correct": false},
+        {"option": "c. onkeydown", "correct": true},
+        {"option": "d. onfocus", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment trouvez-vous le nombre avec la plus grande valeur de « a » et « b »?",
+      "options": [
+        {"option": "a. top(a, b)", "correct": false},
+        {"option": "b. ceil(a, b)", "correct": false},
+        {"option": "c. Math.max(a, b)", "correct": true},
+        {"option": "d. Math.ceil(a, b)", "correct": false}
+      ]
+    },
+    {
+      "question": "Les navigateurs qui ne comprennent pas le langage Javascript ___",
+      "options": [
+        {"option": "a. afficher le contenu des balises <script> et <noscript>", "correct": false},
+        {"option": "b. afficher le contenu des balises <script>", "correct": false},
+        {"option": "c. afficher le contenu des balises <noscript>", "correct": true},
+        {"option": "d. ignorer toutes les balises <script> et <noscript>", "correct": false}
+      ]
+    },
+    {
+      "question": "La balise <noscript> fonctionnera ___?",
+      "options": [
+        {"option": "a. uniquement avec des scripts externes", "correct": false},
+        {"option": "b. seulement dans les navigateurs qui ne savent pas ce qu’est le Javascript.", "correct": true},
+        {"option": "c. s’il y a ou non du Javascript", "correct": false},
+        {"option": "d. avec des scripts internes et externes", "correct": false}
+      ]
+    },
+    {
+      "question": "Lequel des éléments suivants N’EST PAS un appel de fonction valide?",
+      "options": [
+        {"option": "a. x = display();", "correct": false},
+        {"option": "b. display();", "correct": false},
+        {"option": "c. let x = display();", "correct": false},
+        {"option": "d. display;", "correct": true}
+      ]
+    },
+    {
+      "question": "Laquelle des fonctions suivantes de I'objet Number renvoie une chaine de caractere du nombre actuel?",
+      "options": [
+        {"option": "a. toPrecision", "correct": false},
+        {"option": "b. toFixed()", "correct": false},
+        {"option": "c. toLocaleString0", "correct": false},
+        {"option": "d. toString0", "correct": true}
+      ]
+    },
+    {
+      "question": "Quel est l’objet qui se trouve dans TOP de la racine en JavaScript ?",
+      "options": [
+        {"option": "a. top", "correct": false},
+        {"option": "b. global", "correct": false},
+        {"option": "c. window", "correct": true},
+        {"option": "d. document", "correct": false}
+      ]
+    },
+    {
+      "question": "L'instruction suivante A ? B : C est equivalent a",
+      "options": [
+        {"option": "a. ifA=BC", "correct": false},
+        {"option": "b. ifABC", "correct": false},
+        {"option": "c. ifABelseC", "correct": true},
+        {"option": "d. ifA==BC", "correct": false}
+      ]
+    },
+    {
+      "question": "Pour connaitre l'identifiant de IOS de I'utilisateur on utilise",
+      "options": [
+        {"option": "a. navigator.os", "correct": false},
+        {"option": "b. navigator.userAgent", "correct": true},
+        {"option": "c. navigator.platform", "correct": false},
+        {"option": "d. navigator.system", "correct": false}
+      ]
+    },
+    {
+      "question": "Quel événement utilisez-vous pour exécuter quelque chose une fois le chargement du page est terminé?",
+      "options": [
+        {"option": "a. onfinished", "correct": false},
+        {"option": "b. onload", "correct": true},
+        {"option": "c. onunload", "correct": false},
+        {"option": "d. oncomplete", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle est la syntaxe correcte pour faire référence à un script externe appelé « myscript.js »?",
+      "options": [
+        {"option": "a. Tout les réponses sont vrais", "correct": false},
+        {"option": "b. <script name=\"myscript.js\">", "correct": false},
+        {"option": "c. <script href=\"myscript.js\">", "correct": false},
+        {"option": "d. <script src=\"myscript.js\">", "correct": true}
+      ]
+    },
+    {
+      "question": "Quel est le bon endroit pour insérer un code JavaScript?",
+      "options": [
+        {"option": "a. Aucune de ces réponses n’est vraie.", "correct": false},
+        {"option": "b. La section <head>", "correct": false},
+        {"option": "c. La section <body>", "correct": false},
+        {"option": "d. Les deux sections <head> et <body> sont correctes", "correct": true}
+      ]
+    },
+    {
+      "question": "Dans quel balise HTML plaçons-nous le code JavaScript?",
+      "options": [
+        {"option": "a. La balise js", "correct": false},
+        {"option": "b. La balise rel", "correct": false},
+        {"option": "c. La balise script", "correct": true},
+        {"option": "d. La balise javascript", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle méthode renvoie les caractères d’une chaîne commençant à l’emplacement spécifié?",
+      "options": [
+        {"option": "a. substr()", "correct": true},
+        {"option": "b. getSubstring()", "correct": false},
+        {"option": "c. Aucune de ces réponses n’est vraie.", "correct": false},
+        {"option": "d. slice()", "correct": false}
+      ]
+    },
+    {
+      "question": "Quelle fonction procede I'inverse de split() ?",
+      "options": [
+        {"option": "a. unite()", "correct": false},
+        {"option": "b. concat", "correct": false},
+        {"option": "c. join()", "correct": true},
+        {"option": "d. append", "correct": false}
+      ]
+    },
+    {
+      "question": "Laquelle des fonctions suivantes est un type de fonction valide que javascript prend en charge?",
+      "options": [
+        {"option": "a. Une fonction nommée", "correct": true},
+        {"option": "b. Aucune de ces réponses n’est vraie", "correct": false},
+        {"option": "c. Une fonction anonyme", "correct": true}
+      ]
+    },
+    {
+      "question": "Si nous souhaitons placer du texte autour d'une image, quelle propriete CSS nous allons utiliser?",
+      "options": [
+        {"option": "a. float", "correct": true},
+        {"option": "b. align", "correct": false},
+        {"option": "c. push", "correct": false},
+        {"option": "d. wrap", "correct": false}
+      ]
+    },
+    {
+      "question": "Maintenant, quelle propriété CSS nous allons utiliser pour contrôler l ordre de pile?",
+      "options": [
+        {"option": "a. d-index", "correct": false},
+        {"option": "b. x-index", "correct": false},
+        {"option": "c. s-index", "correct": false},
+        {"option": "d. z-index", "correct": true}
+      ]
+    },
+    {
+      "question": "Par défaut, les liens sont affichés avec un soulignement. Comment pouvez-vous supprimer le soulignement de tous les liens en utilisant du code CSS?",
+      "options": [
+        {"option": "a. a (text-style: no-underline;)", "correct": false},
+        {"option": "b. a (text-decoration:none ;)", "correct": true},
+        {"option": "c. a (text: no-underline;)", "correct": false},
+        {"option": "d. a (text-decoration: no-underline;)", "correct": false}
+      ]
+    },
+    {
+      "question": "son texte intérieur?",
+      "options": [
+        {"option": "a. padding", "correct": true},
+        {"option": "b. inner-margin", "correct": false},
+        {"option": "c. margin", "correct": false},
+        {"option": "d. spacing", "correct": false}
+      ]
+    },
+    {
+      "question": "La valeur par defaut de I'attribut < position > est",
+      "options": [
+        {"option": "a. fixed", "correct": false},
+        {"option": "b. absolute", "correct": false},
+        {"option": "c. relative", "correct": false},
+        {"option": "d. inherit", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle est la syntaxe correcte du code CSS suivant?",
+      "options": [
+        {"option": "a. bodycolor:Black", "correct": false},
+        {"option": "b. body.color:black", "correct": false},
+        {"option": "c. body.color=blackbody", "correct": false},
+        {"option": "d. Body.color=black", "correct": true}
+      ]
+    },
+    {
+      "question": "Quelle propriété CSS est utilisée pour contrôler la taille du texte d’un élément?",
+      "options": [
+        {"option": "a. text-size", "correct": false},
+        {"option": "b. font-size", "correct": true},
+        {"option": "c. text-style", "correct": false},
+        {"option": "d. font-style", "correct": false}
+      ]
+    }
+  ]
+}
