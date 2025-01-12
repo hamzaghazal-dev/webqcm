@@ -1,0 +1,274 @@
+{
+    "questionnaire": [
+      {
+        "question": "Parmi les dispositifs suivants, lesquels sont utilisés pour établir une connexion WAN ?",
+        "options": [
+          {"option": "A) Switch Ethernet", "correct": false},
+          {"option": "B) Modem DSL", "correct": true},
+          {"option": "C) Routeur", "correct": true},
+          {"option": "D) Point d'accès Wi-Fi", "correct": false}
+        ]
+      },
+      {
+        "question": "Quel standard est utilisé dans la couche physique pour les connexions WAN ?",
+        "options": [
+          {"option": "A) Ethernet", "correct": false},
+          {"option": "B) V.35", "correct": true},
+          {"option": "C) HDLC", "correct": false},
+          {"option": "D) PPP", "correct": false}
+        ]
+      },
+      {
+        "question": "Lequel de ces protocoles n’appartient pas à la couche liaison dans un réseau WAN ?",
+        "options": [
+          {"option": "A) Frame Relay", "correct": false},
+          {"option": "B) MPLS", "correct": false},
+          {"option": "C) HDLC", "correct": false},
+          {"option": "D) IP", "correct": true}
+        ]
+      },
+      {
+        "question": "Quelle affirmation décrit correctement une route statique ?",
+        "options": [
+          {"option": "A) Elle est ajoutée dynamiquement dans la table de routage.", "correct": false},
+          {"option": "B) Elle est configurée manuellement par un administrateur réseau.", "correct": true},
+          {"option": "C) Elle utilise toujours la métrique par défaut du protocole RIP.", "correct": false},
+          {"option": "D) Elle ne peut jamais être utilisée comme route de secours.", "correct": false}
+        ]
+      },
+      {
+        "question": "Lorsque plusieurs routes sont disponibles vers la même destination, quelle est la priorité d’utilisation ?",
+        "options": [
+          {"option": "A) La route avec la plus faible métrique", "correct": true},
+          {"option": "B) La route avec la plus haute distance administrative", "correct": false},
+          {"option": "C) La route la plus récemment configurée", "correct": false},
+          {"option": "D) La route avec le protocole OSPF", "correct": false}
+        ]
+      },
+      {
+        "question": "Quelle est la meilleure description du Split Horizon ?",
+        "options": [
+          {"option": "A) Une route reçue par une interface ne peut pas être annoncée sur cette même interface.", "correct": true},
+          {"option": "B) Une route avec un coût plus élevé est immédiatement retirée de la table de routage.", "correct": false},
+          {"option": "C) Les routes statiques ont priorité sur les routes dynamiques.", "correct": false},
+          {"option": "D) Les mises à jour de routage RIP sont filtrées pour éviter les boucles.", "correct": false}
+        ]
+      },
+      {
+        "question": "Le Route Poisoning est utilisé pour :",
+        "options": [
+          {"option": "A) Supprimer une route non valide en attribuant une métrique infinie.", "correct": true},
+          {"option": "B) Empêcher la propagation des routes statiques vers les voisins.", "correct": false},
+          {"option": "C) Configurer les routes par défaut dans les tables de routage.", "correct": false},
+          {"option": "D) Éviter la convergence des protocoles.", "correct": false}
+        ]
+      },
+      {
+        "question": "Quelle limitation est associée à RIP v1 ?",
+        "options": [
+          {"option": "A) L'absence de support pour VLSM.", "correct": true},
+          {"option": "B) Une distance administrative élevée.", "correct": false},
+          {"option": "C) Une métrique maximale de 30 sauts.", "correct": false},
+          {"option": "D) Une convergence plus rapide que RIP v2.", "correct": false}
+        ]
+      },
+      {
+        "question": "Par défaut, RIP envoie des mises à jour de routage toutes les :",
+        "options": [
+          {"option": "A) 15 secondes", "correct": false},
+          {"option": "B) 30 secondes", "correct": true},
+          {"option": "C) 60 secondes", "correct": false},
+          {"option": "D) 180 secondes", "correct": false}
+        ]
+      },
+      {
+        "question": "Dans OSPF, quelle est la fonction principale d’un LSA (Link State Advertisement) ?",
+        "options": [
+          {"option": "A) Identifier les routeurs DR et BDR dans un réseau.", "correct": false},
+          {"option": "B) Partager l’état des liens pour calculer les routes optimales.", "correct": true},
+          {"option": "C) Réduire les mises à jour de routage inutiles.", "correct": false},
+          {"option": "D) Établir une connexion physique entre deux routeurs.", "correct": false}
+        ]
+      },
+      {
+        "question": "Dans OSPF, qu'est-ce qu'un DR (Designated Router) ?",
+        "options": [
+          {"option": "A) Le routeur avec le coût le plus élevé dans le réseau.", "correct": false},
+          {"option": "B) Le routeur centralisant les mises à jour OSPF dans un réseau multi-accès.", "correct": true},
+          {"option": "C) Le routeur ayant la métrique la plus basse dans un domaine OSPF.", "correct": false},
+          {"option": "D) Le premier routeur configuré dans le réseau.", "correct": false}
+        ]
+      },
+      {
+        "question": "Quel est l'intervalle par défaut des paquets Hello dans OSPF et vers quelle adresse sont-ils envoyés ?",
+        "options": [
+          {"option": "A) 5 secondes via 224.0.0.6", "correct": false},
+          {"option": "B) 10 secondes via 224.0.0.6", "correct": false},
+          {"option": "C) 20 secondes via 224.0.0.5", "correct": false},
+          {"option": "D) 10 secondes via 224.0.0.5", "correct": true}
+        ]
+      },
+      {
+        "question": "Quels paramètres EIGRP utilise-t-il pour calculer la métrique par défaut ?",
+        "options": [
+          {"option": "A) Bande passante et délai", "correct": true},
+          {"option": "B) Distance et fiabilité", "correct": false},
+          {"option": "C) Charge et MTU", "correct": false},
+          {"option": "D) Latence et coûts", "correct": false}
+        ]
+      },
+      {
+        "question": "Quelle est la distance administrative par défaut des routes externes EIGRP ?",
+        "options": [
+          {"option": "A) 90", "correct": false},
+          {"option": "B) 100", "correct": false},
+          {"option": "C) 110", "correct": false},
+          {"option": "D) 170", "correct": true}
+        ]
+      },
+      {
+        "question": "Quelle affirmation est correcte à propos de l'algorithme DUAL d’EIGRP ?",
+        "options": [
+          {"option": "A) Il utilise le coût cumulé comme seule métrique.", "correct": false},
+          {"option": "B) Il garantit une convergence rapide en évitant les boucles.", "correct": true},
+          {"option": "C) Il ne prend en charge que les réseaux IPv4.", "correct": false},
+          {"option": "D) Il remplace automatiquement les routes statiques.", "correct": false}
+        ]
+      },
+      {
+        "question": "Avec un masque de /19, combien d'adresses IP sont disponibles pour les hôtes ?",
+        "options": [
+          {"option": "A) 8190", "correct": false},
+          {"option": "B) 4096", "correct": false},
+          {"option": "C) 8192", "correct": true},
+          {"option": "D) 2048", "correct": false}
+        ]
+      },
+      {
+        "question": "Quelle est l'adresse réseau de 192.168.50.62/27 ?",
+        "options": [
+          {"option": "A) 192.168.50.0", "correct": false},
+          {"option": "B) 192.168.50.32", "correct": true},
+          {"option": "C) 192.168.50.64", "correct": false},
+          {"option": "D) 192.168.50.48", "correct": false}
+        ]
+      },
+      {
+        "question": "Quelle métrique utilise OSPF pour calculer le meilleur chemin ?",
+        "options": [
+          {"option": "A) Coût basé sur la bande passante", "correct": true},
+          {"option": "B) Nombre de sauts", "correct": false},
+          {"option": "C) Temps de latence", "correct": false},
+          {"option": "D) Charge", "correct": false}
+        ]
+      },
+      {
+        "question": "Dans quel cas une distance administrative est-elle utilisée ?",
+        "options": [
+          {"option": "A) Pour choisir entre plusieurs protocoles de routage vers une même destination.", "correct": true},
+          {"option": "B) Pour calculer les délais de convergence.", "correct": false},
+          {"option": "C) Pour synchroniser les mises à jour entre routeurs voisins.", "correct": false},
+          {"option": "D) Pour déterminer les coûts cumulés d’une route.", "correct": false}
+        ]
+      },
+      {
+        "question": "Quel est le rôle principal d’un protocole de routage dynamique ?",
+        "options": [
+          {"option": "A) Configurer manuellement les routes dans un réseau.", "correct": false},
+          {"option": "B) Maintenir automatiquement les tables de routage.", "correct": true},
+          {"option": "C) Gérer les adresses IP privées.", "correct": false},
+          {"option": "D) Propager les VLAN dans un réseau.", "correct": false}
+        ]
+      },
+      {
+        "question": "Quelle est la principale fonction de CDP ?",
+        "options": [
+          {"option": "A) Partager des informations de routage avec des périphériques voisins.", "correct": false},
+          {"option": "B) Découvrir et identifier les périphériques Cisco connectés directement.", "correct": true},
+          {"option": "C) Synchroniser les configurations VLAN entre les périphériques.", "correct": false},
+          {"option": "D) Propager les mises à jour de routage dans le réseau.", "correct": false}
+        ]
+      },
+      {
+        "question": "Par défaut, à quel intervalle les messages CDP sont-ils envoyés ?",
+        "options": [
+          {"option": "A) Toutes les 10 secondes", "correct": false},
+          {"option": "B) Toutes les 30 secondes", "correct": true},
+          {"option": "C) Toutes les 60 secondes", "correct": false},
+          {"option": "D) Toutes les 90 secondes", "correct": false}
+        ]
+      },
+      {
+        "question": "Quelle est la différence majeure entre LLDP et CDP ?",
+        "options": [
+          {"option": "A) LLDP est un protocole ouvert, tandis que CDP est propriétaire.", "correct": true},
+          {"option": "B) LLDP est uniquement utilisé pour IPv6.", "correct": false},
+          {"option": "C) LLDP envoie des mises à jour plus fréquentes que CDP.", "correct": false},
+          {"option": "D) CDP est activé par défaut sur tous les périphériques, contrairement à LLDP.", "correct": false}
+        ]
+      },
+      {
+        "question": "Dans quel scénario LLDP est-il préférable à CDP ?",
+        "options": [
+          {"option": "A) Lors de la configuration de périphériques Cisco uniquement.", "correct": false},
+          {"option": "B) Lors de l'interconnexion de périphériques multi-fournisseurs.", "correct": true},
+          {"option": "C) Lors de l’utilisation de VLANs spécifiques.", "correct": false},
+          {"option": "D) Lors de la mise en œuvre de routage dynamique.", "correct": false}
+        ]
+      },
+      {
+        "question": "Par défaut, quelle est la durée de vie d’une information LLDP dans un périphérique voisin ?",
+        "options": [
+          {"option": "A) 30 secondes", "correct": false},
+          {"option": "B) 60 secondes", "correct": false},
+          {"option": "C) 120 secondes", "correct": true},
+          {"option": "D) 180 secondes", "correct": false}
+        ]
+      },
+      {
+        "question": "Lequel des composants suivants stocke les fichiers de configuration de démarrage ?",
+        "options": [
+          {"option": "A) NVRAM", "correct": true},
+          {"option": "B) RAM", "correct": false},
+          {"option": "C) Flash", "correct": false},
+          {"option": "D) ROM", "correct": false}
+        ]
+      },
+      {
+        "question": "Quelle mémoire est utilisée pour charger et exécuter l’IOS (Internetwork Operating System) sur un routeur Cisco ?",
+        "options": [
+          {"option": "A) ROM", "correct": false},
+          {"option": "B) RAM", "correct": true},
+          {"option": "C) NVRAM", "correct": false},
+          {"option": "D) Flash", "correct": false}
+        ]
+      },
+      {
+        "question": "Quel composant d’un routeur Cisco est utilisé pour stocker le fichier de configuration courant ?",
+        "options": [
+          {"option": "A) RAM", "correct": true},
+          {"option": "B) NVRAM", "correct": false},
+          {"option": "C) Flash", "correct": false},
+          {"option": "D) ROM", "correct": false}
+        ]
+      },
+      {
+        "question": "Quel est le rôle principal de la ROM dans un routeur Cisco ?",
+        "options": [
+          {"option": "A) Stocker le fichier de configuration de démarrage.", "correct": false},
+          {"option": "B) Charger le système d’exploitation IOS au démarrage.", "correct": false},
+          {"option": "C) Fournir des diagnostics matériels et logiciels.", "correct": true},
+          {"option": "D) Sauvegarder les informations de routage.", "correct": false}
+        ]
+      },
+      {
+        "question": "Lorsqu’un routeur démarre, dans quel ordre les composants sont-ils utilisés ?",
+        "options": [
+          {"option": "A) RAM → NVRAM → Flash → ROM", "correct": false},
+          {"option": "B) ROM → Flash → NVRAM → RAM", "correct": true},
+          {"option": "C) Flash → RAM → NVRAM → ROM", "correct": false},
+          {"option": "D) NVRAM → ROM → Flash → RAM", "correct": false}
+        ]
+      }
+    ]
+  }

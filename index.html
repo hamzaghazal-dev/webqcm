@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .feedback {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .feedback.correct {
+            color: green;
+        }
+        .feedback.incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="quiz-container">
+            <!-- Quiz content will be dynamically loaded here -->
+        </div>
+        <div class="d-flex justify-content-between mt-4">
+            <button id="prev-btn" class="btn btn-secondary" >Précédent</button>
+            <button id="next-btn" class="btn btn-primary" 
+            >Suivant</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
